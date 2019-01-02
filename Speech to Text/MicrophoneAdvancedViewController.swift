@@ -37,7 +37,8 @@ class MicrophoneAdvancedViewController: UIViewController {
 
         // use `SpeechToTextSession` for advanced configuration
         session = SpeechToTextSession(
-            apiKey: Credentials.SpeechToTextApiKey
+            username: Credentials.SpeechToTextUsername,
+            password: Credentials.SpeechToTextPassword
         )
 
         // define recognition session callbacks

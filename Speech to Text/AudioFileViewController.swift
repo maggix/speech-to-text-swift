@@ -33,7 +33,8 @@ class AudioFileViewController: UIViewController, AVAudioPlayerDelegate {
         speechSample = Bundle.main.url(forResource: "SpeechSample", withExtension: "wav")
         player = try! AVAudioPlayer(contentsOf: speechSample)
         speechToText = SpeechToText(
-            apiKey: Credentials.SpeechToTextApiKey
+            username: Credentials.SpeechToTextUsername,
+            password: Credentials.SpeechToTextPassword
         )
         player.delegate = self
     }

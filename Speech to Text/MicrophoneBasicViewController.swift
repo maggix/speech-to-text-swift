@@ -29,7 +29,8 @@ class MicrophoneBasicViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         speechToText = SpeechToText(
-            apiKey: Credentials.SpeechToTextApiKey
+            username: Credentials.SpeechToTextUsername,
+            password: Credentials.SpeechToTextPassword
         )
     }
     
