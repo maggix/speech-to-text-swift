@@ -58,8 +58,7 @@ class AudioFileViewController: UIViewController, AVAudioPlayerDelegate {
         var settings = RecognitionSettings(contentType: "audio/wav")
         settings.interimResults = true
         speechToText.recognize(audio: speechSample, settings: settings) {
-            
-            
+
             response, error in
             if let error = error {
                 print(error)
